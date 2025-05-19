@@ -41,6 +41,7 @@ main {
 .w-container {
     max-width: 678px;
 }
+
 /* first_view */
 
 #first_view {
@@ -584,5 +585,14 @@ main {
     }
     #coin {
         display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
