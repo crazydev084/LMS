@@ -96,6 +96,20 @@ main {
     width: 100%;
 }
 
+.btn_download:hover {
+    transform: translateY(-10px) scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.btn-download a {
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-download a:hover {
+    transform: translateY(-5px) scale(1.05);
+}
+
 .alert {
     position: absolute;
     top: 35%;
@@ -254,12 +268,24 @@ main {
     background-color: #DDD500;
 }
 
-#contact a{
+#contact a {
     text-decoration: none;
     color: #382eec;
     background-color: #ffffff;
     padding: 10px 30px;
     border-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+#contact a:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3), 0 12px 24px 0 rgba(0, 0, 0, 0.25);
+}
+
+#contact h3:hover {
+    transform: translate(-5px, -5px) scale(1.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .feature {
@@ -382,7 +408,7 @@ main {
     color: #666;
     font-weight: bold;
     position: absolute;
-    right: 5px;
+    right: 10px;
     top: 50%;
     transform: translate(-50%, -50%);
   }

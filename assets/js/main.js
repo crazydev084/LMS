@@ -59,7 +59,9 @@ $(function() {
 
   function handleHeaderSticky() {
     const scrollHeight = window.pageYOffset
-    if (!headerEl) return false
+    if (!headerEl) {
+      return false
+    }
   
     if (scrollHeight > postionHeight) {
       return headerEl.classList.add(HEADER_STICKY)
